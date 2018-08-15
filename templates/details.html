@@ -9,6 +9,12 @@
     <h1>Details</h1>
     <p>You loaded this page on {{ date }}<br>Mad!</p>
     <p>And now some details, you know, crazy things and so on!</p>
+    <p>For example, I can tell you that:</p>
+    {% if month < 7 %}
+      <h2>It's the first half of the year!</h2>
+    {% else %}
+      <h2>It's the second half of the year!</h2>
+    {% endif %}
   </body>
 
 </html>

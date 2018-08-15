@@ -12,4 +12,5 @@ def index():
 @app.route('/details')
 def details():
     date = datetime.now()
-    return render_template('details.html', date=date)
+    month = date.month
+    return render_template('details.html', date=date, month=month)
