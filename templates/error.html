@@ -1,0 +1,10 @@
+{% extends 'layout.html' %}
+
+{% block heading %}
+  {{ headline }}
+{% endblock %}
+
+{% block content %}
+    <a href="{{ url_for('index') }}">Please submit via form.</a>
+<!-- Note: in the curly braces you put the name of the FUNCTION -->
+{% endblock %}

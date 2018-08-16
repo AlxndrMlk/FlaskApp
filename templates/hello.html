@@ -1,0 +1,13 @@
+{% extends 'layout.html' %}
+
+{% block heading %}
+  Hello, {{ name }}!
+{% endblock %}
+
+{% block content %}
+    <p>We think that {{ name }} is a great name!<br> Nice to meet you!</p>
+
+    <a href="{{ url_for('details') }}">Get details...</a>
+    <a href="{{ url_for('index') }}">Home</a>
+<!-- Note: in the curly braces you put the name of the FUNCTION -->
+{% endblock %}

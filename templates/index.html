@@ -7,6 +7,14 @@
 {% block content %}
     <p>You loaded this page on {{ date }}<br>Mad!</p>
 
+    <p>Now you can enter your name:</p>
+    <form action="{{ url_for('hello') }}" method="post">
+      <input type="text" name="name" placeholder="Your name here">
+      <button>Submit</button>
+    </form>
+
+    <br>
+
     <a href="{{ url_for('details') }}">Get details...</a>
 <!-- Note: in the curly braces you put the name of the FUNCTION -->
 {% endblock %}
