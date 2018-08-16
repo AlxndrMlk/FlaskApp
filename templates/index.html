@@ -1,15 +1,12 @@
-<!DOCTYPE HTML>
-<html>
+{% extends 'layout.html' %}
 
-  <head>
-    <title>My Flask Web App, Hurray!</title>
-  </head>
+{% block heading %}
+  {{ headline }}
+{% endblock %}
 
-  <body>
-    <h1>{{ headline }}</h1>
+{% block content %}
     <p>You loaded this page on {{ date }}<br>Mad!</p>
 
     <a href="{{ url_for('details') }}">Get details...</a>
-  </body>
-
-</html>
+<!-- Note: in the curly braces you put the name of the FUNCTION -->
+{% endblock %}
