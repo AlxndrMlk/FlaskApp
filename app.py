@@ -11,6 +11,7 @@ def index():
 
 @app.route('/details')
 def details():
+    some_list = ['Janek', 'Dharmal', 'Hila', 'Kurt']
     date = datetime.now()
     month = date.month
-    return render_template('details.html', date=date, month=month)
+    return render_template('details.html', date=date, month=month, names=some_list)
